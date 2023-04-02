@@ -1,0 +1,10 @@
+<div class="mainCuadro" style="display: flex; flex-wrap: wrap;">
+    <div class="item" *ngFor="let i of ar; let ind = index">
+        <img height="100px" width="100px" src="https://video-images.vice.com/_uncategorized/1507043104908-_MG_8079.jpeg">
+        <button class="btn" [disabled]="!btnActive &&ind!=indexClick"  (click)="clickButon($event, ind)">
+            {{ind != indexClick?'Vote':'unvote' }}
+        </button>
+
+        
+    </div>
+</div>
